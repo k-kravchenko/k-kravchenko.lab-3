@@ -1,48 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>My First Web Page</title>
+  <meta charset="UTF-8">
+  <title>Kateryna — UX/UI Designer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio and contact page for Kateryna, a UX/UI Designer specializing in web design, branding, and UX research.">
+  <link rel="stylesheet" href="mystyle.css">
 </head>
 
 <body>
+  <!-- Header -->
+  <header>
     <h1>Hello, World!</h1>
     <p><strong>My name is Kateryna</strong></p>
-    <p style="color:blue">I am a UX/UI Designer</p>
-    <img src="my-photo.png" alt="A photo of me" width="420" height="260">
-    <h2>This what I do:</h2>
-    <ul>
-        <li>Web Design</li>
-        <li>Branding</li>
-        <li>UX Research</li>
-    </ul>
+    <p style="color: blue;">I am a UX/UI Designer</p>
+    <figure>
+      <img src="my-photo.png" alt="Portrait of Kateryna" width="420" height="260">
+      <figcaption>Designing intuitive, accessible experiences.</figcaption>
+    </figure>
+  </header>
+
+  <main>
+    <!-- Selected Work (simple, HTML-only) -->
+    <section>
+      <h2>Selected Work</h2>
+      <article>
+        <h3>FinTech Dashboard</h3>
+        <p>A responsive analytics dashboard focused on clarity, quick insights, and inclusive color contrast.</p>
+      </article>
+      <article>
+        <h3>Brand Refresh for Wellness App</h3>
+        <p>Updated visual system with a style guide, icon set, and motion principles to improve engagement.</p>
+      </article>
+    </section>
+
     <hr>
-    <h3>How you can contact me:</h3>
-    <ol>
+
+    <!-- Contact -->
+    <section>
+      <h3>How you can contact me:</h3>
+      <ol>
         <li><a href="mailto:krawchenko.k.e@gmail.com">Email</a></li>
-        <li><a href="https://www.linkedin.com/in/kravchenko-kateryna/">LinkedIn</a></li>
-        <li><a href="https://www.kkravchenko/">My website</a></li>
-        <li>Or fill out a form below.</li>
-    </ol>
+        <li><a href="https://www.linkedin.com/in/kravchenko-kateryna/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://www.kkravchenko/" target="_blank" rel="noopener">My website</a></li>
+        <li>Or fill out the form below.</li>
+      </ol>
 
+      <!-- Contact Form -->
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Send me a message</legend>
 
-    <form>
-        <label>Name</label>
-        <input type="text" name="name" required><br>
+          <label for="name">Name</label>
+          <input id="name" type="text" name="name" placeholder="Your full name" autocomplete="name" required><br>
 
-        <label>Email</label>
-        <input type="email" name="email" required><br>
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" placeholder="you@example.com" autocomplete="email" required><br>
 
-        <label>Your message</label>
-        <textarea name="message" placeholder="Type your message..." required></textarea>
-        <div>
-            <input type="checkbox" required>
-            <label><i>I accept the <strong>Terms & Conditions</strong></i></label>
-        </div>
+          <label for="message">Your message</label>
+          <textarea id="message" name="message" placeholder="Type your message..." rows="5" required></textarea>
 
-        <button type="submit" class="red-button">Submit</button>
-    </form>
+          <div>
+            <input id="accept" type="checkbox" required>
+            <label for="accept"><i>I accept the <strong>Terms &amp; Conditions</strong></i></label>
+          </div>
+
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Kateryna. All rights reserved.</p>
+    <nav>
+      <a href="#">Work</a> |
+      <a href="#">Contact</a>
+    </nav>
+  </footer>
 </body>
-
 </html>

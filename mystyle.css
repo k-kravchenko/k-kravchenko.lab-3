@@ -14,4 +14,120 @@ p {
 h1 {
     color: red;
     text-align: center;
+    margin: 24px 0 8px;
+}
+
+h2, h3 {
+    color: #333;
+    margin: 24px 0 12px;
+  }
+  
+figure {
+    margin: 16px auto;
+    text-align: center;
+  }
+  
+figure img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    border: 1px solid;
+}
+  
+figcaption {
+    font-size: 14px;
+    color: #555;
+    margin-top: 8px;
+}
+  
+/* Lists */
+ul, ol {
+    padding-left: 22px;
+    margin: 8px 0 16px;
+}
+  
+li {
+    margin: 6px 0;
+}
+  
+/* Divider */
+hr {
+    border: none;
+    border-top: 1px solid;
+    margin: 24px 0;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid;
+    border-radius: 12px;
+    padding: 16px;
+    max-width: 720px;
+    margin: 12px 0;
+}
+  
+  fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+  
+  
+/* Labels and inputs stacked for clean alignment */
+label {
+    display: inline-block;
+    font-weight: 600;
+    color: #2f2f2f;
+    margin: 10px 0 6px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 1px solid;
+  border-radius: 8px;
+  background: #fffef2;
+  color: #222;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+form div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0 14px;
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+  
+button {
+    background:red;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 18px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.05s ease, filter 0.2s ease;
+  }
+  
+/* Footer */
+footer {
+    text-align: center;
+    padding: 24px 0 40px;
+    color: #555;
+}
+  
+footer nav {
+    margin-top: 8px;
 }
